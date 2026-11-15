@@ -34,6 +34,7 @@
 - [🟩 Open-Source Software & Defensive Tooling](#-open-source-software--defensive-tooling)
 - [📊 Architectural Comparison at a Glance](#-architectural-comparison-at-a-glance)
 - [📈 Star History](#-star-history)
+- [💖 Support & Sponsorship](#-support--sponsorship)
 - [🤝 Contributing & Community Standards](#-contributing--community-standards)
 - [📄 License](#-license)
 
@@ -126,9 +127,22 @@ Self-hosted, community-driven tools protecting against ransomware across kernel 
 
 ---
 
-## 📈 Star History 🌟
+##  Star History
+[![Star History Chart](https://www.star-history.com/svg?repos=ishandutta2007/Awesome-Multi-Layered-Ransomware-Defense&type=date&legend=top-left)](https://www.star-history.com/#ishandutta2007/Awesome-Multi-Layered-Ransomware-Defense&type=date&legend=top-left)
 
-[![Star History Chart](https://api.star-history.com/svg?repos=ishandutta2007/Awesome-Multi-Layered-Ransomware-Defense&type=Date)](https://star-history.com/#ishandutta2007/Awesome-Multi-Layered-Ransomware-Defense&Date)
+---
+
+## 💖 Support & Sponsorship ☕
+
+Thank you for visiting and using this curated multi-layered ransomware defense guide! 🙌
+
+If this project has saved you research hours, helped you harden your enterprise endpoints, or assisted in designing your immutable backup strategy, please consider supporting the project:
+
+- ⭐ **Star the repository** on GitHub to boost visibility and help others discover it.
+- 🍴 **Fork and share** this curated list with your team, peers, and InfoSec communities.
+- ☕ **Buy me a coffee & sponsor development**: Support ongoing maintenance, fact-checking, and threat research via the [GitHub Sponsors Dashboard](https://github.com/sponsors/ishandutta2007).
+
+Every bit of support helps keep this guide comprehensive, up-to-date, and completely open-source! ❤️
 
 ---
 
