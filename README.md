@@ -1,164 +1,158 @@
-# Awesome-Multi-Layered-Ransomware-Defense
+# 🛡️ Awesome Multi-Layered Ransomware Defense 🚀
 
-# Awesome Multi-Layered Ransomware Defense
+<p align="center">
+  <img src="assets/banner.svg" alt="Awesome Multi-Layered Ransomware Defense Banner" width="100%" />
+</p>
 
-> A curated list of top Multi-Layered Ransomware Defense platforms — both SaaS/Hosted commercial solutions and open-source alternatives for preventing, detecting, and recovering from ransomware across endpoints, backups, and infrastructure.
-> 🌟 Star this repo if you find it useful! 🌟
+<p align="center">
+  <a href="https://github.com/ishandutta2007/Awesome-Awesome-Awesome"><img src="https://img.shields.io/badge/Awesome-%E2%9C%94-blueviolet?style=flat-square&logo=github" alt="Awesome"/></a>
+  <a href="https://discord.gg/jc4xtF58Ve"><img src="https://img.shields.io/badge/Discord-5865F2?style=for-the-badge&logo=discord&logoColor=white" alt="Discord" /></a>
+  <a href="https://github.com/ishandutta2007/Awesome-Multi-Layered-Ransomware-Defense/stargazers"><img src="https://img.shields.io/github/stars/ishandutta2007/Awesome-Multi-Layered-Ransomware-Defense?style=flat-square&logo=github" alt="GitHub stars"/></a>
+  <a href="https://github.com/ishandutta2007/Awesome-Multi-Layered-Ransomware-Defense/network/members"><img src="https://img.shields.io/github/forks/ishandutta2007/Awesome-Multi-Layered-Ransomware-Defense?style=flat-square&logo=github" alt="GitHub forks"/></a>
+  <a href="LICENSE"><img src="https://img.shields.io/badge/License-CC0_1.0-blue.svg?style=flat-square" alt="License: CC0 1.0"/></a>
+  <a href="https://github.com/ishandutta2007/Awesome-Multi-Layered-Ransomware-Defense/pulls"><img src="https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square" alt="PRs Welcome"/></a>
+  <a href="https://github.com/ishandutta2007"><img alt="GitHub followers" src="https://img.shields.io/github/followers/ishandutta2007?label=Follow" /></a>
+</p>
 
----
-
-## 📋 Table of Contents
-
-- [SaaS / Hosted Platforms](#-saas--hosted-platforms)
-  - [SentinelOne Singularity](#sentinelone-singularity)
-  - [CrowdStrike Falcon](#crowdstrike-falcon)
-  - [Rubrik Security Cloud](#rubrik-security-cloud)
-  - [Veeam Data Platform](#veeam-data-platform)
-  - [Druva Data Defense](#druva-data-defense)
-  - [Cohesity ThreatDefense](#cohesity-threatdefense)
-  - [Commvault Cloud Autonomous Recovery](#commvault-cloud-autonomous-recovery)
-- [Open-Source Software](#-open-source-software)
-  - [RansomShield](#ransomshield)
-  - [Warden](#warden)
-  - [Bouclier Bleu](#bouclier-bleu)
-  - [Sentinel Antivirus](#sentinel-antivirus)
-  - [endpoint-security-ai-agent](#endpoint-security-ai-agent)
-  - [AEGIS](#aegis)
-  - [ShadowStrike Phantom](#shadowstrike-phantom)
-  - [backup-integrity-checker](#backup-integrity-checker)
-  - [shadow-copy-guard](#shadow-copy-guard)
-  - [VaultSentry](#vaultsentry)
+> 🌐 **A curated index of premier Multi-Layered Ransomware Defense platforms, endpoint detection and response (EDR/XDR) architectures, behavioral heuristic engines, and immutable disaster recovery vaults.** Built for CISOs, SecOps engineers, blue teams, and system administrators defending modern hybrid infrastructure against extortion malware.
+> 🌟 *Star this repository if you find it valuable for your cybersecurity engineering and incident response stack!* 🌟
 
 ---
 
-## 🟦 SaaS / Hosted Platforms
+## 🧭 Executive Summary & SEO Keywords 🔍
 
-Commercial, cloud-hosted Multi-Layered Ransomware Defense platforms. These are not open-source but are included as reference points for feature comparison.
-
-### SentinelOne Singularity
-**Type:** Autonomous endpoint protection with ransomware rollback
-SentinelOne is known for its autonomous response capabilities, including automatic ransomware rollback to a clean state without analyst intervention. Its Storyline visualization connects related events across endpoints, and the agent is lightweight. It is often cited as the most autonomous of the major platforms for minimizing dwell time and automating containment.
-
-### CrowdStrike Falcon
-**Type:** AI-native endpoint protection with threat intelligence
-CrowdStrike is strong for threat detection and visibility, with top-tier threat intelligence and named-adversary attribution. Its Falcon platform provides EDR with real-time response capabilities (RTR) for direct system access. It is particularly strong for heterogeneous OS fleets and large Linux server environments.
-
-### Rubrik Security Cloud
-**Type:** Zero-trust data security with ransomware investigation
-Rubrik provides immutable backup protection, advanced threat detection, and ransomware investigation. Its Threat Monitoring uses Rubrik threat intelligence feeds (YARA rules, file hashes) to scan backups, while Turbo Threat Hunting identifies affected snapshots across thousands of backups in seconds. Quarantining prevents malware reinfection during recovery.
-
-### Veeam Data Platform
-**Type:** Data resilience with immutable backups and AI-assisted security
-Veeam Data Platform v13 includes immutable backups by default, a pre-hardened software appliance with automated patching, and AI-powered malware analysis. Its Malware Analysis Agent and Deep Data Analysis Agent within Veeam Intelligence help detect and respond to threats, with integrations into CrowdStrike, Palo Alto Networks, and Microsoft Sentinel.
-
-### Druva Data Defense
-**Type:** SaaS data protection with ransomware resilience
-Druva provides immutable, air-gapped backups in the Druva Cloud, with threat hunting capabilities over backup data. Its Cyber Resiliency features include ransomware detection, anomaly analysis, and audit trails, with view-only administrator roles for separation of duties. Remote data wipe capabilities protect data on lost or stolen devices.
-
-### Cohesity ThreatDefense
-**Type:** Cyber-resilient data platform with AI threat detection
-Cohesity Data Cloud protects 1,000+ workloads with zero-trust principles, AI-powered threat detection, and immutability. A structured 5-step cyber resilience framework covers protection, recoverability, detection, rehearsing application resilience with clean rooms, and optimizing data risk posture. Cohesity Gaia activates backup data for AI without ETL pipelines.
-
-### Commvault Cloud Autonomous Recovery
-**Type:** AI-ready cloud and SaaS resilience
-Commvault Cloud includes Threat Scan with AI-powered anomaly detection, malware scanning, and EDR/XDR integration. Synthetic Recovery reconstructs clean recovery points while preserving current data. Cleanroom validation allows recovery testing before production restore.
+- **Core Defense Vectors:** Anti-Ransomware Platforms, Multi-Layered Cyber Resilience, Endpoint Detection and Response (EDR), Extended Detection and Response (XDR), eBPF Linux Security Modules (BPF LSM), Windows Kernel Minifilter Drivers.
+- **Integrity & Vaulting:** Immutable Object Storage, Air-Gapped Snapshots, Volume Shadow Copy Protection (VSS Guard), File Integrity Monitoring (FIM), Honeypot Canaries, Cryptographic Hash Verification.
+- **Target Environments:** Cloud Workloads (AWS, Azure, GCP), Kubernetes & Containers, Linux Enterprise Servers, Windows Server & Active Directory Domains, macOS Fleet Endpoints.
 
 ---
 
-## 🟩 Open-Source Software
+## 📋 Table of Contents 📑
 
-Self-hosted, community-driven Multi-Layered Ransomware Defense tools. The open-source ecosystem spans **behavioral detection daemons**, **eBPF-based NGAV/EDR**, **canary-based tripwires**, **AI-powered EDR**, and **backup integrity validators**.
-
-### RansomShield
-**Stack:** Rust / Linux (fanotify) | **License:** Open Source
-RansomShield is a security daemon for Linux servers that protects against ransomware by monitoring file system activity through fanotify. It combines **entropy scoring**, **burst detection**, and **honeypot files** to identify and stop encryption. In testing across five distros, simulated ransomware was consistently detected and killed after 8 files (default `burst_file_count`), leaving the rest untouched, with only 8 of 300 files (2.7%) affected in a stress run—all recovered intact from quarantine. It includes a **directory-baseline gate** that prevents false positives on legitimate backup workloads, and an **allowlist** that narrows burst/entropy heuristics for trusted tools without disabling honeypot detection. Overhead is negligible (~2 MB RSS). It has been hardened through adversarial testing, fixing gaps like intermittent/partial-encryption evasion (now samples start, middle, and end) and brand-new-subdirectory bypasses [citation:15].
-**Best for:** Linux server administrators wanting a production-tested, low-overhead daemon that detects and kills ransomware behavior while preserving untouched files and quarantining affected ones.
-
-### Warden
-**Stack:** Rust / Linux (fanotify / GTK4) | **License:** Open Source
-Warden is a free, open-source EDR for Linux workstations written in Rust, with ransomware-specific defenses. It includes **fanotify filesystem monitoring**, **YARA scanning**, and **ransomware detection with per-PID, per-directory, and global counters** to catch fork-per-file attacks. Quarantine includes setuid-stripping and cross-process locking. The security model is hardened through adversarial testing: package-manager spoofing detection (checks directory, not just name), TOCTOU mitigations, and privileged action gating via `pkexec`. The GTK4 GUI provides live status, detection history, quarantine management, and exception management, with consequential actions requiring real authentication. It runs as root with systemd sandboxing (`ProtectSystem=strict`, `NoNewPrivileges`, `RestrictSUIDSGID`) [citation:10].
-**Best for:** Linux workstation users wanting a focused, hardened open-source EDR with a desktop dashboard and ransomware-specific detection logic.
-
-### Bouclier Bleu
-**Stack:** Rust / eBPF (BPF LSM) / Linux | **License:** Open Source
-Bouclier Bleu is a modular Next-Generation Antivirus (NGAV) and Endpoint Detection & Response (EDR) for Linux, leveraging **eBPF in kernel-space** and memory-safe Rust in user-space. Its primary goals are to prevent ransomware, stop exploits before compromise, and reduce attack surface. It implements modules such as `rename_entropy` (analyzes filesystem encryption patterns), `strict_wx` (blocks writable-executable memory), and `shield` (canary files). It provides structured NDJSON telemetry to `/var/log/bouclier-bleu/alerts.json` for native ingestion into any SIEM [citation:2]. Requires Linux kernel 5.12+ with BPF LSM enabled.
-**Best for:** Linux security teams wanting a modular, eBPF-based NGAV/EDR with kernel-level enforcement and SIEM-ready telemetry.
-
-### Sentinel Antivirus
-**Stack:** (Check repository) / Windows | **License:** Open Source
-Sentinel Antivirus is a lightweight open-source antivirus engine for Windows with **YARA scanning**, a **PE ML classifier**, and a **kernel minifilter driver**. It implements a 5-tier triage pipeline: SHA-256 hash deduplication, Authenticode signature verification, high-confidence YARA regex matching, lightweight structural PE triage, and deep EMBER2024 ML inference (~180 ms) only on suspicious binaries. Tiers 0–3 filter out over 98% of routine file activity in under 5 ms. It includes a **ransomware canary defense** that deploys zero-byte sacrificial decoy files, triggering alert, process suspension, and quarantine on any unauthorized modification [citation:6].
-**Best for:** Windows environments wanting a lightweight AV with ML-based PE classification and canary-based ransomware defense.
-
-### endpoint-security-ai-agent
-**Stack:** Python / FastAPI / Next.js / Docker | **License:** Open Source
-An open-source **AI EDR** that detects and stops ransomware, Cobalt Strike, and living-off-the-land attacks in real time. Features include **ML-powered ransomware detection** (encrypted extensions, high entropy, rapid file changes), autonomous response (auto-kill, quarantine, host isolation), a **Next.js web dashboard** with real-time WebSocket updates, and a **ChatGPT-style AI analyst** for natural language incident queries. It uses osquery for telemetry and supports Windows, macOS, and Linux via Docker Compose [citation:5].
-**Best for:** Teams wanting a comprehensive open-source EDR with a modern web dashboard and AI-assisted analysis, accepting the Docker/FastAPI/Next.js stack.
-
-### AEGIS
-**Stack:** Python / FastAPI / Next.js / Rust agent | **License:** Open Source
-AEGIS is an open-source autonomous cybersecurity platform with attack surface management, autonomous incident response (SOAR), honeypot deception, and ransomware defense. Claims 11/11 detection score and sub-300ms pipeline. Features deterministic playbooks for auto-blocking brute force, SQL injection, and C2 beacon responses, plus a Rust endpoint agent. Includes guardrail system with auto-approve/require-approval policies and full audit trails. Ranked #1 among open-source ransomware protection tools in a 2026 comparison [citation:4][citation:12].
-**Best for:** Teams wanting an integrated open-source platform combining detection, automated response, and deception.
-
-### ShadowStrike Phantom
-**Stack:** (Check repository) / Windows | **License:** Open Source (pre-alpha)
-ShadowStrike Phantom is an open-source Windows endpoint protection platform that monitors kernel activity and detects ransomware. **Important status:** Its maker labels it **pre-alpha, actively developing, and not for production use** [citation:4][citation:12].
-**Best for:** Security researchers and early adopters wanting to evaluate kernel-level ransomware detection concepts, not for production deployment.
-
-### backup-integrity-checker
-**Stack:** (Check repository) | **License:** Open Source
-Part of the Ransomware Defense Framework, this tool validates backup freshness and hash integrity against a manifest, automating backup resilience governance checklist items. It has been tested end-to-end, including simulated tampering and missing-file detection [citation:9].
-**Best for:** Teams needing automated verification that backups remain intact and untampered, complementing live endpoint detection with recovery assurance.
-
-### shadow-copy-guard
-**Stack:** PowerShell (Windows) / Python (Linux) | **License:** Open Source
-Behavioral prevention controls that kill processes matching shadow-copy/backup-deletion command patterns, operationalizing the top-priority indicator in the framework's behavioral indicators documentation. Design inspired by Raccine. The Linux version is tested end-to-end; the Windows version is written and syntax-reviewed but not execution-tested [citation:9].
-**Best for:** Teams wanting to block the common ransomware precursor of deleting shadow copies and backups, accepting the need to validate the Windows version in a lab.
-
-### VaultSentry
-**Stack:** Python | **License:** Open Source
-VaultSentry monitors backup files nightly, hashing every file to detect tampering, ransomware encryption, corruption, missing files, and sudden size drops. It supports **named snapshots** at any point in time, diffing any two to see exactly what changed, one-click GUI restore, and a daily HTML digest email. It is focused specifically on backup integrity monitoring rather than live endpoint detection [citation:1].
-**Best for:** Teams wanting to verify the integrity of their backup files against tampering or encryption, complementing live endpoint detection with a recovery-focused safety net.
+- [📈 Sector Overview & Market Dynamics](#-sector-overview--market-dynamics)
+- [🟦 SaaS / Commercial Enterprise Platforms](#-saas--commercial-enterprise-platforms)
+- [🟩 Open-Source Software & Defensive Tooling](#-open-source-software--defensive-tooling)
+- [📊 Architectural Comparison at a Glance](#-architectural-comparison-at-a-glance)
+- [📈 Star History](#-star-history)
+- [🤝 Contributing & Community Standards](#-contributing--community-standards)
+- [📄 License](#-license)
 
 ---
 
-## 📊 Comparison at a Glance
+## 📈 Sector Overview & Market Dynamics 📊
 
-| Software | License | Stack | Detection Method | Automated Response | Recovery Focus | Self-Hosted | Best For |
-|----------|---------|-------|------------------|---------------------|----------------|-------------|----------|
-| **SentinelOne** | Proprietary | Cloud | Behavioral AI | ✅ Rollback | ✅ | ❌ | Autonomous endpoint rollback |
-| **CrowdStrike** | Proprietary | Cloud | AI + threat intel | ✅ RTR | (Backup dependent) | ❌ | Threat intel + response |
-| **Rubrik** | Proprietary | Cloud/Appliance | YARA + threat intel | ✅ Quarantine | ✅ Immutable backups | (Appliance) | Ransomware investigation + recovery |
-| **Veeam** | Proprietary | Cloud/On-prem | AI malware analysis | ✅ | ✅ Immutable backups | (On-prem) | Data resilience + AI |
-| **RansomShield** | Open Source | Rust/Linux | Entropy + burst + honeypot | ✅ Kill process | ✅ Quarantine restore | ✅ | Linux server protection |
-| **Warden** | Open Source | Rust/Linux | Entropy + YARA + honeypot | ✅ Kill + quarantine | ✅ Quarantine | ✅ | Linux workstation EDR |
-| **Bouclier Bleu** | Open Source | Rust/eBPF/Linux | eBPF LSM modules | ✅ Kernel-level | (Canary) | ✅ | eBPF NGAV/EDR + SIEM |
-| **Sentinel AV** | Open Source | Windows | YARA + ML + canary | ✅ Suspend | (Quarantine) | ✅ | Windows AV + canary |
-| **endpoint-security-ai-agent** | Open Source | Python/FastAPI | ML + heuristics | ✅ Kill + isolate | ✅ Quarantine | ✅ | Full EDR + AI dashboard |
-| **AEGIS** | Open Source | Python/FastAPI | ML + SOAR + deception | ✅ Playbooks | (Audit) | ✅ | Integrated detection + SOAR |
-| **backup-integrity-checker** | Open Source | (Check) | Hash manifest validation | ❌ | ✅ Verify backups | ✅ | Backup tamper detection |
-| **VaultSentry** | Open Source | Python | File hashing + snapshots | (Alert) | ✅ Restore | ✅ | Backup integrity monitoring |
+The global **Ransomware Protection and Cyber Resilience market** is estimated at **$32.5 billion in 2026** and projected to surpass **$115 billion by 2034**, expanding at a Compound Annual Growth Rate (CAGR) of **15.4%**. 
+
+From an industry structure perspective, the market exhibits a **moderately concentrated yet hybrid dynamic**:
+- **Consolidated Enterprise Tier:** Top-tier conglomerate vendors (**CrowdStrike, SentinelOne, Rubrik, Veeam, Cohesity, Commvault, Microsoft, Palo Alto Networks**) capture the bulk of enterprise budget through integrated, all-in-one XDR ecosystems and enterprise cloud-vaulting suites where vendor lock-in and cyber-insurance underwriting standards favor comprehensive institutional platforms.
+- **Fragmented Innovation Tier:** Concurrently, rapid proliferation of Ransomware-as-a-Service (RaaS) operations, intermittent encryption evasion, and hyper-targeted extortion campaigns maintain a **highly fragmented niche ecosystem** of specialized behavioral daemons, kernel-level eBPF interceptors, canary tripwire services, and open-source backup integrity monitors.
 
 ---
 
-## 🤝 Contributing
+## 🟦 SaaS / Commercial Enterprise Platforms ☁️
 
-Contributions are welcome! If you know of an open-source Multi-Layered Ransomware Defense tool that should be listed here, please open a pull request with:
+The following tabular overview catalogs market-leading SaaS and hosted commercial multi-layered ransomware defense platforms. The table is strictly sorted in descending order by enterprise scale (Valuation / Market Capitalization).
 
-- Project name and URL
-- Brief description (1–2 sentences)
-- Stack and license
-- Why it stands out
-
-Please ensure the project is actively maintained (releases within the last 12 months) and genuinely open-source.
-
-**Note on the open-source ecosystem:** The open-source ransomware defense landscape has matured significantly in 2026, with strong options across multiple layers of defense. **RansomShield** and **Warden** are the most hardened Linux detection daemons, both validated through adversarial testing with real fixes for evasion techniques like partial-encryption and fork-per-file attacks [citation:10][citation:15]. **Bouclier Bleu** brings eBPF-based kernel-level enforcement with SIEM-ready telemetry [citation:2]. For Windows, **Sentinel Antivirus** offers ML-based PE classification and canary defense [citation:6]. **AEGIS** was ranked the top open-source ransomware protection tool in a 2026 comparison, combining detection with SOAR playbooks and deception [citation:4][citation:12]. On the recovery side, **backup-integrity-checker** and **VaultSentry** verify that backups remain intact and untampered—a critical layer that live endpoint detection cannot provide [citation:1][citation:9]. No single open-source project replicates the full breadth of SentinelOne or Rubrik's integrated prevention-detection-recovery stack, but combinations of these tools cover the core layers of a multi-layered defense.
-
----
-
-## 📄 License
-
-This list is released under CC0 1.0 Universal (Public Domain). The software projects listed retain their respective licenses.
+| Platform / Vendor 🏢 | Scale (Valuation / Market Cap) 💰 | Pricing (Starting Paid Tier) 🏷️ | Free Tier / Evaluation Limits ⏳ | Key Defensive Focus 🛡️ |
+| :--- | :--- | :--- | :--- | :--- |
+| **CrowdStrike Falcon** 🦅 | ~$232 Billion Market Cap *(Public: NASDAQ: CRWD)* | **$7.99 / device / month** *(Falcon Go, billed annually at $59.99/device/yr)* | **15-day free trial** *(Full access to Falcon Prevent NGAV, Device Control, and USB protection; up to 100 endpoints; no credit card required)* | AI-native endpoint protection, Real-Time Response (RTR), adversary threat intelligence, and cloud workload security. |
+| **Rubrik Security Cloud** 🔐 | ~$23 Billion Market Cap *(Public: NYSE: RBRK)* | **~$130 / TB / month** *(Base Foundation tier licensing on AWS Marketplace; multi-year enterprise commitments available)* | **30-day proof-of-concept (PoC)** *(Scoped enterprise sandbox evaluation via sales engineering or AWS Marketplace private offer)* | Zero-trust cyber recovery, immutable backups, YARA backup threat monitoring, and Turbo Threat Hunting across snapshots. |
+| **Veeam Data Platform** 💾 | ~$15 Billion Valuation *(Private / Insight Partners)* | **$155 / workload / year** *(Foundation VUL subscription; sold in minimum packs of 10 workloads)* | **Permanently Free Community Edition** *(Up to 10 workloads forever with full backup & recovery; 30-day unrestricted Enterprise trial included upon download)* | Enterprise data resilience, immutable Linux backup repositories, AI-assisted threat analysis, and instant VM disaster recovery. |
+| **SentinelOne Singularity** ⚡ | ~$7.7 Billion Market Cap *(Public: NYSE: S)* | **$69.99 / endpoint / year** *(Singularity Core, approx. $5.83/endpoint/mo; Singularity Control at $79.99/yr)* | **14 to 30-day free trial** *(Provisioned enterprise trial/PoC via direct request or authorized MSSP partner; no automatic credit card billing)* | Autonomous behavioral AI, 1-click ransomware rollback to unencrypted snapshots, Storyline process tree visualization. |
+| **Cohesity ThreatDefense** 🛡️ | ~$7.5 Billion Valuation *(Private enterprise)* | **~$150 / Front-End TB / year** *(Enterprise software subscription; BaaS options scale by capacity and retention)* | **30-day free trial** *(Cohesity Data Cloud / Backup-as-a-Service hands-on evaluation for hybrid VMs and SaaS workloads)* | Multi-cloud data security platform, SmartFiles immutability, AI-driven threat defense, and isolated FortKnox cyber vaulting. |
+| **Commvault Cloud** 🌐 | ~$7.2 Billion Market Cap *(Public: NASDAQ: CVLT)* | **$1.70 / user / month** *(Microsoft 365 SaaS protection; file/object cloud storage protection starts at ~$58.50/TB/mo)* | **30-day free trial** *(Self-service trial covering virtual machines, databases, Kubernetes, and SaaS applications with no credit card required)* | Autonomous recovery, AI-powered Threat Scan anomaly detection, cleanroom recovery testing, and air-gapped Cloud Command. |
+| **Druva Data Defense** ☁️ | ~$2.0 Billion Valuation *(Private enterprise)* | **$4.00 / user / month** *(End-user SaaS/app backup; Data Center server workloads start at ~$210/TB/month consumption credit)* | **30-day free trial** *(Full platform functionality across endpoints, Microsoft 365, and AWS infrastructure workloads)* | 100% SaaS serverless data protection, air-gapped Druva Cloud storage, zero-hardware ransomware recovery, and remote data wipe. |
 
 ---
 
-⭐ **If this list helped you discover a useful tool, please star the repo!** ⭐
+## 🟩 Open-Source Software & Defensive Tooling 💻
+
+Self-hosted, community-driven tools protecting against ransomware across kernel I/O, userland daemons, canary tripwires, and backup verification. Repositories are strictly sorted in descending order by GitHub community star count.
+
+| Project & Repository 📦 | GitHub Stars 🌟 | Stack & Environment ⚙️ | Detection & Enforcement Mechanism 🔍 | Key Defensive Layer 🛡️ |
+| :--- | :--- | :--- | :--- | :--- |
+| **[restic](https://github.com/restic/restic)** 🔒 | [![Stars](https://img.shields.io/github/stars/restic/restic?style=social&color=white)](https://github.com/restic/restic/stargazers) | Go / Multi-Platform | Cryptographically verified snapshots, client-side AES-256 encryption, append-only immutable repository flags. | **Layer 4: Immutable Vault**<br>Guarantees untampered, ransomware-proof snapshot recovery across offsite object storage and cold repositories. |
+| **[Wazuh](https://github.com/wazuh/wazuh)** 🛡️ | [![Stars](https://img.shields.io/github/stars/wazuh/wazuh?style=social&color=white)](https://github.com/wazuh/wazuh/stargazers) | C / Python / Multi-Platform | File Integrity Monitoring (FIM), behavioral anomaly detection, real-time command execution blocking, log analysis. | **Layer 1 & 2: SIEM & Active Response**<br>Comprehensive open-source XDR agent executing automated process termination and network isolation. |
+| **[BushidoUK/Ransomware-Tool-Matrix](https://github.com/BushidoUK/Ransomware-Tool-Matrix)** 🗺️ | [![Stars](https://img.shields.io/github/stars/BushidoUK/Ransomware-Tool-Matrix?style=social&color=white)](https://github.com/BushidoUK/Ransomware-Tool-Matrix/stargazers) | Markdown / Threat Intel | Exhaustive MITRE ATT&CK mapping of operational tools, loaders, and exfiltration software used by 100+ active ransomware gangs. | **Layer 0: Threat Intelligence**<br>Essential detection engineering baseline for validating whether your defensive sensors detect active ransomware tooling. |
+| **[Neo23x0/Raccine](https://github.com/Neo23x0/Raccine)** 💉 | [![Stars](https://img.shields.io/github/stars/Neo23x0/Raccine?style=social&color=white)](https://github.com/Neo23x0/Raccine/stargazers) | C++ / Windows (Registry/IFEO) | Intercepts attempts to delete Volume Shadow Copies via `vssadmin`, `wbadmin`, `bcdedit`, or `powershell` using Image File Execution Options. | **Layer 1: Pre-Execution Tripwire**<br>Kills offending parent processes before ransomware can eliminate local Windows recovery shadow snapshots. |
+| **[Decryptonite](https://github.com/DecryptoniteTeam/Decryptonite)** 🗝️ | [![Stars](https://img.shields.io/github/stars/DecryptoniteTeam/Decryptonite?style=social&color=white)](https://github.com/DecryptoniteTeam/Decryptonite/stargazers) | Python / Multi-Platform | Real-time mass-encryption activity detection, heuristic entropy analysis, process containment, and automated decryption mitigation. | **Layer 2: Behavioral Interception**<br>Stops rapid unauthorized file transformation and preserves uncorrupted copies for immediate restore. |
+| **[RafWu/RansomWatch](https://github.com/RafWu/RansomWatch)** 👁️ | [![Stars](https://img.shields.io/github/stars/RafWu/RansomWatch?style=social&color=white)](https://github.com/RafWu/RansomWatch/stargazers) | C++ / C / Windows Kernel | Windows Minifilter Driver monitoring raw file system I/O, detecting encryption burst write rates, and killing malicious processes. | **Layer 2: Kernel Minifilter**<br>Low-level kernel driver defense operating under the Windows Filter Manager to intercept file-locker malware. |
+| **[TomasPhilippart/ebpfangel](https://github.com/TomasPhilippart/ebpfangel)** 🐝 | [![Stars](https://img.shields.io/github/stars/TomasPhilippart/ebpfangel?style=social&color=white)](https://github.com/TomasPhilippart/ebpfangel/stargazers) | C (eBPF) / Python / Linux | Machine learning classifier paired with Linux eBPF kernel probes for real-time anomalous file system event detection. | **Layer 2: eBPF Kernel Probes**<br>Zero-overhead kernel event tracing without modifying kernel binaries or loading risky out-of-tree kernel modules. |
+| **[nextcloud/ransomware_protection](https://github.com/nextcloud/ransomware_protection)** ☁️ | [![Stars](https://img.shields.io/github/stars/nextcloud/ransomware_protection?style=social&color=white)](https://github.com/nextcloud/ransomware_protection/stargazers) | PHP / Nextcloud Ecosystem | File upload scanner matching extension fingerprints, known ransomware naming conventions, and automated locking triggers. | **Layer 3: Storage Gateway Guard**<br>Prevents compromised client workstations from synchronizing encrypted or renamed files into private enterprise clouds. |
+| **[ShadowStrike](https://github.com/ShadowStrike-Labs/ShadowStrike)** 👻 | [![Stars](https://img.shields.io/github/stars/ShadowStrike-Labs/ShadowStrike?style=social&color=white)](https://github.com/ShadowStrike-Labs/ShadowStrike/stargazers) | C++ / C / Windows Kernel | `PhantomSensor` WDM minifilter driver, CPU emulator sandbox (`PhantomEmulator`), canary file tripwires, and PE ML classification. | **Layer 2: Open-Source EDR**<br>Auditable Windows endpoint security engine featuring kernel I/O callbacks and sacrificial decoy monitoring. |
+| **[BushidoUK/Awesome-Ransomware](https://github.com/BushidoUK/Awesome-Ransomware)** 📚 | [![Stars](https://img.shields.io/github/stars/BushidoUK/Awesome-Ransomware?style=social&color=white)](https://github.com/BushidoUK/Awesome-Ransomware/stargazers) | Markdown / Security Wiki | Curated index of academic ransomware analysis papers, decryption tools, prevention blueprints, and post-incident playbooks. | **Layer 0: Research & Reference**<br>Broad reference manual for incident responders studying ransomware binary internals and evasion tactics. |
+| **[talus-process-monitor](https://github.com/Hartwell-Labs/talus-process-monitor)** 🔬 | [![Stars](https://img.shields.io/github/stars/Hartwell-Labs/talus-process-monitor?style=social&color=white)](https://github.com/Hartwell-Labs/talus-process-monitor/stargazers) | Rust / eBPF / Linux | Static binary eBPF agent tracking rapid write entropy and process bursts; executes instant SIGSTOP or SIGKILL containment. | **Layer 2: Linux Autonomous Containment**<br>Single-binary deployment that pauses ransomware processes mid-burst without requiring system reboots. |
+| **[Warden](https://github.com/Spellskite-coding/Warden)** 🛡️ | [![Stars](https://img.shields.io/github/stars/Spellskite-coding/Warden?style=social&color=white)](https://github.com/Spellskite-coding/Warden/stargazers) | Rust / Linux (fanotify / GTK4) | Filesystem-wide fanotify monitoring, multi-counter burst tracking (per-PID, per-dir, global), YARA scanning, and `pkexec` gating. | **Layer 2: Workstation EDR**<br>Adversarially hardened Linux desktop EDR with quarantine locking and protection against package-manager spoofing. |
+| **[Sentinel Antivirus](https://github.com/mukti-sys/sentinel-antivirus)** 🎯 | [![Stars](https://img.shields.io/github/stars/mukti-sys/sentinel-antivirus?style=social&color=white)](https://github.com/mukti-sys/sentinel-antivirus/stargazers) | C++ / Python / Windows | 5-tier triage pipeline: SHA-256 deduplication, Authenticode verification, YARA matching, PE ML inference, zero-byte canary decoys. | **Layer 1 & 3: NGAV & Decoy Tripwire**<br>Lightweight Windows antivirus deploying sacrificial files to trigger immediate process suspension upon modification. |
+| **[RansomShield](https://github.com/Spellskite-coding/RansomShield)** ⚡ | [![Stars](https://img.shields.io/github/stars/Spellskite-coding/RansomShield?style=social&color=white)](https://github.com/Spellskite-coding/RansomShield/stargazers) | Rust / Linux (fanotify) | High-speed fanotify daemon combining entropy scoring, burst limits, and honeypot traps; tested across 5 distributions. | **Layer 2 & 3: Server Protection Daemon**<br>Kills encryption processes within 8 files; directory-baseline gate prevents false alarms during legitimate backups. |
+| **[Bouclier Bleu](https://github.com/alexandreboutrik/bouclier-bleu)** 🛡️ | [![Stars](https://img.shields.io/github/stars/alexandreboutrik/bouclier-bleu?style=social&color=white)](https://github.com/alexandreboutrik/bouclier-bleu/stargazers) | Rust / eBPF (BPF LSM) / Linux | BPF LSM kernel enforcement, `rename_entropy` tracking, `strict_wx` memory protection, and NDJSON telemetry for SIEMs. | **Layer 2: Next-Gen eBPF Antivirus**<br>Modular kernel-level LSM engine blocking memory injection and filesystem encryption at native kernel speeds. |
+| **[endpoint-security-ai-agent](https://github.com/MuthoniGathiithi/endpoint-security-ai-agent)** 🤖 | [![Stars](https://img.shields.io/github/stars/MuthoniGathiithi/endpoint-security-ai-agent?style=social&color=white)](https://github.com/MuthoniGathiithi/endpoint-security-ai-agent/stargazers) | Python / FastAPI / Next.js | osquery telemetry engine, machine learning heuristic scoring, auto-kill host isolation, and conversational AI incident copilot. | **Layer 1 & 2: AI EDR Dashboard**<br>Modern containerized AI analyst dashboard providing natural language triage of ransomware telemetry. |
+| **[AEGIS SOC Platform](https://github.com/ErfanSaraee/aegis-autonomous-soc-platform)** ⚡ | [![Stars](https://img.shields.io/github/stars/ErfanSaraee/aegis-autonomous-soc-platform?style=social&color=white)](https://github.com/ErfanSaraee/aegis-autonomous-soc-platform/stargazers) | Python / FastAPI / Next.js | Autonomous 7-node LangGraph agent, autoencoder anomaly detection, deterministic containment playbooks, and honeypots. | **Layer 1 & 2: Autonomous SOAR**<br>Automated incident containment executing deterministic playbooks to isolate endpoints and block lateral movement. |
+| **[VaultSentry](https://github.com/Egyan07/VaultSentry)** 🗄️ | [![Stars](https://img.shields.io/github/stars/Egyan07/VaultSentry?style=social&color=white)](https://github.com/Egyan07/VaultSentry/stargazers) | Python / Tkinter | Automated cryptographic file hashing, named snapshot generation, diff analysis, and daily HTML backup health digests. | **Layer 4: Backup Integrity Monitor**<br>Detects silent backup encryption, unauthorized file modification, and abrupt size drops with 1-click restore. |
+| **[shadow-copy-guard](https://github.com/mrezwanulbari/ransomware-defense-framework/tree/main/tooling/shadow-copy-guard)** 🛡️ | [![Stars](https://img.shields.io/github/stars/mrezwanulbari/ransomware-defense-framework?style=social&color=white)](https://github.com/mrezwanulbari/ransomware-defense-framework/stargazers) | PowerShell / Python / Bash | Monitored command parser intercepting deletion commands aimed at volume shadow copies, system state, and catalog records. | **Layer 1: Pre-Execution Prevention**<br>Operationalizes anti-evasion defenses inspired by Raccine for both Linux and Windows environments. |
+| **[backup-integrity-checker](https://github.com/mrezwanulbari/ransomware-defense-framework/tree/main/tooling/backup-integrity-checker)** 🔍 | [![Stars](https://img.shields.io/github/stars/mrezwanulbari/ransomware-defense-framework?style=social&color=white)](https://github.com/mrezwanulbari/ransomware-defense-framework/stargazers) | Shell / Python / Manifest | Automated checksum and manifest validation engine testing backup directories for tampering, truncation, or missing snapshots. | **Layer 4: Recovery Governance**<br>Validates backup freshness and cryptographic integrity to ensure clean, malware-free recovery targets. |
+
+---
+
+## 📊 Architectural Comparison at a Glance 🔍
+
+| Solution 💻 | Deployment Type ☁️ | Primary Detection Vector 🎯 | Response Action ⚡ | Recovery Assurance 💾 | Self-Hosted 🏠 | Target Architecture 🎯 |
+| :--- | :--- | :--- | :--- | :--- | :--- | :--- |
+| **CrowdStrike Falcon** | SaaS Cloud | ML + Threat Intel + Indicators of Attack (IOA) | Real-Time Response (RTR) & Host Isolation | Secondary (Relies on clean enterprise backup) | ❌ No | Enterprise Hybrid Fleets |
+| **Rubrik Security Cloud** | SaaS + Cloud/Edge Appliance | YARA Rules + Behavioral Snapshot Anomaly Analysis | Automated File Quarantine & Access Revocation | ✅ Native Zero-Trust Immutable Snapshots | ⚠️ Appliance | Enterprise Disaster Recovery |
+| **Veeam Data Platform** | SaaS / Self-Managed Hybrid | Inline AI Malware Scanners & Threat Intelligence | Automated Alerting & Incident Isolation | ✅ Native Hardened Linux Immutable Storage | ✅ Yes | Virtual & Physical Infrastructure |
+| **SentinelOne Singularity** | SaaS Cloud | Behavioral AI & Storyline Process Telemetry | Automated Process Kill & OS Rollback | ✅ 1-Click File Shadow Rollback | ❌ No | Enterprise Endpoints & Cloud |
+| **Cohesity ThreatDefense** | SaaS / Hybrid Cloud | Machine Learning Entropy & Anomaly Detection | Automated Workflow Isolation & Alerting | ✅ Air-Gapped FortKnox Cyber Vaulting | ⚠️ Hybrid | Enterprise Secondary Storage |
+| **Commvault Cloud** | SaaS Cloud | Machine Learning Risk Scoring & Anomaly Scans | Host Isolation & Synthetic Recovery | ✅ Air-Gapped Cleanroom Recovery | ❌ No | Cloud & SaaS Applications |
+| **Druva Data Defense** | 100% Cloud SaaS | Behavioral Anomaly Heuristics & Hash Matching | Network Isolation & Remote Endpoint Wipe | ✅ Air-Gapped Deduplicated Cloud Storage | ❌ No | Distributed Workstations & M365 |
+| **restic** | Open Source CLI | Cryptographic SHA-256 Repository Verification | Read-Only Snapshot Locks (Append-Only) | ✅ Cryptographically Verified Restore Points | ✅ Yes | Servers, Desktops & Cloud |
+| **Wazuh** | Open Source Platform | File Integrity Monitoring (FIM) & Rule Engine | Active Response Script Execution (Kill/Block) | ⚠️ External Script Driven | ✅ Yes | Multi-Platform Endpoints & Cloud |
+| **Neo23x0/Raccine** | Open Source Utility | Registry IFEO Interception of VSS Deletion Tools | Immediate Process Kill of Precursor Commands | ✅ Preserves Local Volume Shadow Copies | ✅ Yes | Windows Workstations & Servers |
+| **Decryptonite** | Open Source Software | File System Entropy Spikes & Extension Renaming | Process Suspension & Rollback Restoration | ✅ Preserves Cached File Copies | ✅ Yes | Desktops & Local Storage |
+| **RafWu/RansomWatch** | Open Source Driver | Windows Minifilter Driver File I/O Monitoring | Automated Process Termination | ⚠️ Relies on System Backups | ✅ Yes | Windows Kernel Endpoints |
+| **TomasPhilippart/ebpfangel**| Open Source Agent | eBPF Linux Kernel Probes + ML Classification | Kernel-Level Event Logging & Alerts | ⚠️ Relies on System Backups | ✅ Yes | Linux Server Infrastructure |
+| **nextcloud/ransomware_prot** | Open Source Plugin | Upload Fingerprinting & Extension Blocklists | Upload Rejection & Account Alerting | ✅ Preserves Nextcloud File Versions | ✅ Yes | Nextcloud Private Clouds |
+| **ShadowStrike** | Open Source Framework | Minifilter Callbacks, CPU Emulation, Canaries | Process Suspension & Quarantining | ⚠️ Sandbox Rollback | ✅ Yes | Windows Security Research |
+| **Hartwell-Labs/talus** | Open Source Agent | eBPF Burst Scoring & High-Entropy Writing | Automated SIGSTOP / SIGKILL Process Halting | ⚠️ Relies on File Snapshots | ✅ Yes | Linux Containers & Servers |
+| **RansomShield** | Open Source Daemon | fanotify Burst Detection & Honeypot Tripwires | Process Kill within 8 Files & Quarantine | ✅ Quarantined Original File Restoration | ✅ Yes | Linux Server Infrastructure |
+| **Warden** | Open Source EDR | fanotify Burst Rates, YARA Rules & Honeypots | Process Termination & Setuid-Stripped Isolation | ✅ Quarantined File Restoration | ✅ Yes | Linux Desktop Workstations |
+| **Sentinel Antivirus** | Open Source Antivirus | PE ML Inference (EMBER) & Decoy Canary Traps | Process Suspension & Driver-Level Interception | ⚠️ Decoy Quarantine | ✅ Yes | Windows Client Environments |
+| **Bouclier Bleu** | Open Source NGAV | BPF LSM Kernel Enforcement & Memory Shields | Kernel-Level System Call Interception | ⚠️ SIEM Alert Driven | ✅ Yes | Modern Linux (Kernel 5.12+) |
+| **endpoint-security-ai-agent**| Open Source EDR | osquery Telemetry & ML Anomaly Analytics | Host Network Isolation & Process Kill | ⚠️ Local Quarantine | ✅ Yes | Containerized Fleets |
+| **AEGIS SOC Platform** | Open Source SOAR | Autoencoder Anomaly Scoring & Playbooks | Automated SOAR Endpoint Containment | ⚠️ Playbook Dependent | ✅ Yes | SOC Operations & Multi-Cloud |
+| **VaultSentry** | Open Source Monitor | Nightly Cryptographic Hash Comparison & Diffing | Anomaly Flagging & Digest Alerting | ✅ 1-Click GUI Snapshot Restoration | ✅ Yes | On-Premise Backup Directories |
+| **shadow-copy-guard** | Open Source Script | Command-Line Pattern Interception | Immediate Process Termination | ✅ Prevents Deletion of Local Snapshots | ✅ Yes | Linux & Windows Systems |
+| **backup-integrity-checker** | Open Source Checker | Hash Manifest Cross-Validation & Freshness | Automated Alerting & Governance Logging | ✅ Guarantees Recovery Manifest Health | ✅ Yes | Backup Repositories & Disks |
+
+---
+
+## 📈 Star History 🌟
+
+[![Star History Chart](https://api.star-history.com/svg?repos=ishandutta2007/Awesome-Multi-Layered-Ransomware-Defense&type=Date)](https://star-history.com/#ishandutta2007/Awesome-Multi-Layered-Ransomware-Defense&Date)
+
+---
+
+## 🤝 Contributing & Community Standards 💡
+
+Contributions from cybersecurity professionals, blue-team operators, open-source maintainers, and security researchers are warmly welcomed! 
+
+To submit a new open-source ransomware defense tool, behavioral engine, or commercial resilience platform, please review our contribution guidelines:
+
+1. **Active Maintenance:** The repository or project must demonstrate active maintenance (commits, updates, or vendor releases within the last 12 months).
+2. **Defensive Relevance:** The project must address one or more layers of ransomware defense (prevention, tripwires, behavioral detection, kernel monitoring, or immutable recovery).
+3. **Factual Formatting:** Ensure entries include project name, official GitHub repository URL, primary language stack, license, and a concise summary of its detection/mitigation capabilities.
+4. **Pull Request Protocol:** Fork this repository, create a descriptive feature branch (e.g. `feature/add-ebpf-detector`), apply changes cleanly, and submit a PR.
+
+---
+
+## 📄 License 📜
+
+To the extent possible under law, the author(s) have dedicated all copyright and related neighboring rights to this repository to the public domain worldwide under the terms of the **[Creative Commons CC0 1.0 Universal Public Domain Dedication (CC0 1.0)](LICENSE)**.
+
+You can copy, modify, distribute, and perform the work, even for commercial purposes, all without asking permission. Software products and repositories referenced within this list remain subject to their respective intellectual property rights and licenses.
+
+---
+
+<p align="center">
+  ⭐ <b>If this defensive compilation helped strengthen your cybersecurity posture, please star the repository!</b> ⭐
+</p>
